@@ -1,4 +1,4 @@
-require "mknafunc"
+require_relative "src/mknafunc"
 
 fname = "na_op.c"
 $> = open(fname,"w")

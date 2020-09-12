@@ -8,11 +8,9 @@ narray_config.h
 *.o
 narray.so
 mkmf.log
-na_math.c
-na_op.c
+
 
 pkg/
 src
 doc
 
-narray-*.gem

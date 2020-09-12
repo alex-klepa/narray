@@ -1,15 +1,15 @@
-open("src/narray.h") do |f|
-  f.each_line do |l|
-    if /NARRAY_VERSION "([\d.]+)"/ =~ l
-      NARRAY_VERSION = $1
-      break
-    end
-  end
-end
+# open("src/narray.h") do |f|
+#   f.each_line do |l|
+#     if /NARRAY_VERSION "([\d.]+)"/ =~ l
+#       NARRAY_VERSION = $1
+#       break
+#     end
+#   end
+# end
 
 GEMSPEC = Gem::Specification.new do |s|
   s.name = "narray"
-  s.version = NARRAY_VERSION
+  s.version = "0.6.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Masahiro Tanaka"]
@@ -24,6 +24,8 @@ README.md
 README.ja.md
 SPEC.en.txt
 SPEC.ja.txt
+src/na_op.c
+src/na_math.c
 src/depend
 src/extconf.rb
 src/mkmath.rb

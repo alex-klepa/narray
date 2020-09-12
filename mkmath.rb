@@ -1,4 +1,4 @@
-require "mknafunc"
+require_relative "src/mknafunc"
 
 # File name
 fname = "na_math.c"
